@@ -1,0 +1,603 @@
+export function ArtopiaLandingPage() {
+  return (
+    <div className="min-h-screen w-full overflow-hidden bg-gradient-to-b from-sky-300 to-sky-100 relative flex items-center justify-center font-sans">
+      {/* Clouds */}
+      <div className="absolute top-6 left-10 w-40 h-20 bg-white rounded-full blur-sm opacity-90"></div>
+      <div className="absolute top-12 right-20 w-52 h-24 bg-white rounded-full blur-sm opacity-90"></div>
+
+      {/* Hills */}
+      <div className="absolute bottom-0 left-0 right-0 h-72 bg-gradient-to-t from-lime-700 to-lime-400 rounded-t-[120px]"></div>
+      <div className="absolute bottom-10 left-[-5%] w-[60%] h-48 bg-lime-500 rounded-full opacity-90"></div>
+      <div className="absolute bottom-8 right-[-5%] w-[55%] h-44 bg-lime-400 rounded-full opacity-90"></div>
+
+      {/* Main Content */}
+      <div className="relative z-10 flex flex-col items-center">
+        {/* Top Buttons */}
+        <div className="absolute -top-36 left-[-320px]">
+          <button className="w-16 h-16 rounded-full bg-yellow-400 border-4 border-orange-500 shadow-xl flex items-center justify-center hover:scale-105 transition-transform">
+            <span className="text-3xl">⚙️</span>
+          </button>
+        </div>
+
+        <div className="absolute -top-36 right-[-320px]">
+          <button className="w-16 h-16 rounded-full bg-red-400 border-4 border-red-600 shadow-xl flex items-center justify-center hover:scale-105 transition-transform">
+            <span className="text-3xl font-bold text-red-900">✕</span>
+          </button>
+        </div>
+
+        {/* Logo */}
+        <div className="relative mb-12">
+          <div className="absolute inset-0 bg-white rounded-[50px] blur-md scale-110 opacity-90"></div>
+          <h1 className="relative text-8xl md:text-9xl font-black tracking-tight flex drop-shadow-[0_8px_0_rgba(255,255,255,0.7)]">
+            <span className="text-lime-500">a</span>
+            <span className="text-green-400">r</span>
+            <span className="text-cyan-400">t</span>
+            <span className="text-teal-500">o</span>
+            <span className="text-sky-700">p</span>
+            <span className="text-violet-500">i</span>
+            <span className="text-amber-400">a</span>
+          </h1>
+        </div>
+
+        {/* Small Building */}
+        <div className="mb-8 relative">
+          <div className="w-28 h-20 bg-orange-300 rounded-xl border-4 border-orange-500 shadow-lg relative">
+            <div className="absolute top-2 left-2 w-8 h-8 bg-yellow-100 rounded"></div>
+            <div className="absolute top-2 right-2 w-8 h-8 bg-yellow-100 rounded"></div>
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-10 h-12 bg-orange-700 rounded-t-lg"></div>
+          </div>
+        </div>
+
+        {/* Start Button */}
+        <button className="px-14 py-5 rounded-[28px] bg-gradient-to-b from-lime-400 to-lime-600 border-[5px] border-lime-700 shadow-[0_8px_0_#4d7c0f] hover:translate-y-1 hover:shadow-[0_4px_0_#4d7c0f] transition-all duration-150">
+          <span className="text-white text-3xl md:text-4xl font-black tracking-wide drop-shadow-md">
+            LET’S START!
+          </span>
+        </button>
+      </div>
+
+      {/* Decorative Flowers */}
+      <div className="absolute bottom-24 left-20 text-2xl">🌼</div>
+      <div className="absolute bottom-32 left-40 text-xl">🌸</div>
+      <div className="absolute bottom-20 right-24 text-2xl">🌼</div>
+      <div className="absolute bottom-36 right-40 text-xl">🌸</div>
+
+      {/* Path */}
+      <div className="absolute bottom-0 w-[400px] h-[220px] bg-yellow-100 opacity-70 rounded-t-full"></div>
+    </div>
+  )
+}
+
+export function NameInputPage() {
+  return (
+    <div className="min-h-screen w-full overflow-hidden relative bg-gradient-to-b from-sky-300 to-sky-100 flex items-center justify-center font-sans">
+      {/* Clouds */}
+      <div className="absolute top-6 left-12 w-40 h-20 bg-white rounded-full opacity-80 blur-sm"></div>
+      <div className="absolute top-10 right-24 w-52 h-24 bg-white rounded-full opacity-80 blur-sm"></div>
+
+      {/* Hills */}
+      <div className="absolute bottom-0 left-0 right-0 h-72 bg-gradient-to-t from-lime-700 to-lime-400 rounded-t-[120px]"></div>
+      <div className="absolute bottom-10 left-[-5%] w-[60%] h-48 bg-lime-500 rounded-full opacity-90"></div>
+      <div className="absolute bottom-8 right-[-5%] w-[55%] h-44 bg-lime-400 rounded-full opacity-90"></div>
+
+      {/* Blur Overlay */}
+      <div className="absolute inset-0 backdrop-blur-[2px] bg-black/10"></div>
+
+      {/* Back Button */}
+      <button className="absolute top-6 left-6 z-20 w-16 h-16 rounded-full bg-yellow-400 border-4 border-orange-500 shadow-xl flex items-center justify-center hover:scale-105 transition-transform">
+        <span className="text-4xl text-orange-700">←</span>
+      </button>
+
+      {/* Mini Logo */}
+      <div className="absolute top-6 right-6 z-20">
+        <div className="text-5xl font-black flex drop-shadow-lg scale-75 origin-top-right">
+          <span className="text-lime-500">a</span>
+          <span className="text-green-400">r</span>
+          <span className="text-cyan-400">t</span>
+          <span className="text-teal-500">o</span>
+          <span className="text-sky-700">p</span>
+          <span className="text-violet-500">i</span>
+          <span className="text-amber-400">a</span>
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center w-full px-6">
+        <h1 className="text-5xl md:text-7xl font-black text-lime-700 mb-12 tracking-wide drop-shadow-[0_4px_0_rgba(255,255,255,0.9)] text-center">
+          WHAT IS YOUR NAME?
+        </h1>
+
+        <input
+          type="text"
+          placeholder="Enter your name here"
+          className="w-full max-w-2xl px-10 py-6 rounded-[30px] border-[5px] border-lime-500 text-center text-3xl bg-white/95 shadow-xl outline-none placeholder:text-lime-300 text-lime-700 font-semibold"
+        />
+      </div>
+
+      {/* Decorative Flowers */}
+      <div className="absolute bottom-24 left-20 text-2xl">🌼</div>
+      <div className="absolute bottom-32 left-40 text-xl">🌸</div>
+      <div className="absolute bottom-20 right-24 text-2xl">🌼</div>
+      <div className="absolute bottom-36 right-40 text-xl">🌸</div>
+
+      {/* Path */}
+      <div className="absolute bottom-0 w-[420px] h-[220px] bg-yellow-100 opacity-50 rounded-t-full rotate-6"></div>
+    </div>
+  )
+}
+
+export function WelcomePage({ userName = 'Alex' }) {
+  return (
+    <div className="min-h-screen w-full relative overflow-hidden bg-gradient-to-b from-sky-300 to-sky-100 flex items-center justify-center font-sans">
+      {/* Clouds */}
+      <div className="absolute top-10 left-20 w-52 h-24 bg-white rounded-full opacity-90 blur-sm"></div>
+      <div className="absolute top-16 right-24 w-60 h-28 bg-white rounded-full opacity-90 blur-sm"></div>
+
+      {/* School Building Background */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[360px] bg-orange-200 border-t-[12px] border-orange-500 rounded-t-[30px] shadow-inner">
+        <div className="absolute top-0 left-0 right-0 h-12 bg-orange-500"></div>
+        <div className="grid grid-cols-4 gap-4 px-12 pt-24">
+          {Array.from({ length: 8 }).map((_, i) => (
+            <div key={i} className="h-20 bg-cyan-200 border-4 border-cyan-500 rounded-md"></div>
+          ))}
+        </div>
+      </div>
+
+      {/* Trees */}
+      <div className="absolute bottom-0 left-10 w-40 h-40 bg-lime-500 rounded-full blur-[1px]"></div>
+      <div className="absolute bottom-0 right-10 w-44 h-44 bg-lime-500 rounded-full blur-[1px]"></div>
+
+      {/* Character */}
+      <div className="absolute left-0 bottom-0 z-20 flex flex-col items-center">
+        <div className="w-64 h-64 rounded-full bg-orange-200 border-8 border-orange-400 flex items-center justify-center text-8xl shadow-2xl">
+          👧
+        </div>
+      </div>
+
+      {/* Dialog Box */}
+      <div className="relative z-30 max-w-4xl w-[80%] bg-yellow-50 border-[6px] border-orange-700 rounded-[40px] shadow-2xl p-10 ml-32">
+        <h2 className="text-4xl md:text-5xl font-black text-orange-700 leading-tight text-center">
+          Hi, {userName}! Welcome to Artopia!
+
+          <br />
+          My name is Rami and I will be
+ your friend and art guide.
+        </h2>
+
+        <p className="text-center text-orange-300 text-2xl mt-8 font-medium">
+          Tap anywhere to continue
+        </p>
+      </div>
+    </div>
+  )
+}
+
+export function MainMenuPage() {
+  const menuItems = [
+    {
+      title: 'LESSONS',
+      icon: '✏️',
+    },
+    {
+      title: 'ARTWORKS',
+      icon: '🖼️',
+    },
+    {
+      title: 'MINI-GAME',
+      icon: '🎮',
+    },
+  ]
+
+  return (
+    <div className="min-h-screen w-full overflow-hidden relative bg-gradient-to-b from-sky-300 to-sky-100 flex items-center justify-center font-sans">
+      {/* Clouds */}
+      <div className="absolute top-8 left-20 w-52 h-24 bg-white rounded-full opacity-90 blur-sm"></div>
+      <div className="absolute top-16 right-24 w-60 h-28 bg-white rounded-full opacity-90 blur-sm"></div>
+
+      {/* School Building Background */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[720px] h-[380px] bg-orange-200 border-t-[12px] border-orange-500 rounded-t-[30px] opacity-80">
+        <div className="absolute top-0 left-0 right-0 h-12 bg-orange-500"></div>
+
+        <div className="grid grid-cols-4 gap-4 px-12 pt-24">
+          {Array.from({ length: 8 }).map((_, i) => (
+            <div
+              key={i}
+              className="h-20 bg-cyan-200 border-4 border-cyan-500 rounded-md"
+            ></div>
+          ))}
+        </div>
+      </div>
+
+      {/* Trees */}
+      <div className="absolute bottom-0 left-0 w-48 h-48 bg-lime-500 rounded-full blur-[1px]"></div>
+      <div className="absolute bottom-0 right-0 w-52 h-52 bg-lime-500 rounded-full blur-[1px]"></div>
+
+      {/* Blur Overlay */}
+      <div className="absolute inset-0 backdrop-blur-[2px] bg-white/10"></div>
+
+      {/* Settings Button */}
+      <button className="absolute top-6 left-6 z-20 w-16 h-16 rounded-full bg-yellow-400 border-4 border-orange-500 shadow-xl flex items-center justify-center hover:scale-105 transition-transform">
+        <span className="text-3xl">⚙️</span>
+      </button>
+
+      {/* Logo */}
+      <div className="absolute top-6 right-6 z-20">
+        <div className="text-5xl font-black flex drop-shadow-lg scale-75 origin-top-right">
+          <span className="text-lime-500">a</span>
+          <span className="text-green-400">r</span>
+          <span className="text-cyan-400">t</span>
+          <span className="text-teal-500">o</span>
+          <span className="text-sky-700">p</span>
+          <span className="text-violet-500">i</span>
+          <span className="text-amber-400">a</span>
+        </div>
+      </div>
+
+      {/* Menu Cards */}
+      <div className="relative z-10 flex flex-wrap justify-center gap-10 px-6">
+        {menuItems.map((item) => (
+          <button
+            key={item.title}
+            className="w-72 h-96 rounded-[36px] bg-gradient-to-b from-orange-400 to-orange-500 border-[6px] border-orange-800 shadow-[0_10px_0_#7c2d12] hover:translate-y-2 hover:shadow-[0_5px_0_#7c2d12] transition-all duration-150 p-4 flex flex-col"
+          >
+            <h2 className="text-4xl font-black text-yellow-200 text-center mt-2 tracking-wide">
+              {item.title}
+            </h2>
+
+            <div className="flex-1 mt-6 rounded-[28px] bg-yellow-50 border-[5px] border-orange-200 flex items-center justify-center shadow-inner">
+              <span className="text-9xl">{item.icon}</span>
+            </div>
+          </button>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export function ArtworksPage() {
+  const artworks = [
+    { id: 1, status: 'WORK IN PROGRESS' },
+    { id: 2, status: '' },
+    { id: 3, status: '' },
+    { id: 4, status: '' },
+    { id: 5, status: '' },
+    { id: 6, status: 'WORK IN PROGRESS' },
+  ]
+
+  return (
+    <div className="min-h-screen w-full overflow-hidden relative bg-[#f6c78f] flex flex-col items-center font-sans">
+      {/* Header */}
+      <div className="w-full flex items-center justify-between px-6 pt-6">
+        <button className="w-16 h-16 rounded-full bg-yellow-400 border-4 border-orange-600 shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
+          <span className="text-3xl">🏠</span>
+        </button>
+
+        <h1 className="text-6xl md:text-7xl font-black text-orange-100 tracking-wide drop-shadow-[0_5px_0_#92400e] text-center">
+          YOUR ARTWORKS
+        </h1>
+
+        <button className="w-16 h-16 rounded-full bg-yellow-400 border-4 border-orange-600 shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
+          <span className="text-3xl">⚙️</span>
+        </button>
+      </div>
+
+      {/* Main Content */}
+      <div className="w-full flex items-center justify-center mt-10 px-6 gap-6">
+        {/* Left Arrow */}
+        <button className="w-16 h-16 rounded-full bg-yellow-400 border-4 border-orange-600 shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
+          <span className="text-4xl text-orange-700">←</span>
+        </button>
+
+        {/* Artwork Grid */}
+        <div className="grid grid-cols-3 gap-4 max-w-5xl w-full">
+          {artworks.map((artwork) => (
+            <div
+              key={artwork.id}
+              className="relative h-44 rounded-2xl bg-yellow-50 border-[5px] border-orange-500 shadow-inner overflow-hidden"
+            >
+              {artwork.status && (
+                <div className="absolute top-0 left-0 right-0 bg-orange-200 py-2 text-center text-orange-700 font-black text-lg">
+                  {artwork.status}
+                </div>
+              )}
+
+              <button className="absolute bottom-3 right-3 text-4xl hover:scale-110 transition-transform">
+                ⬇️
+              </button>
+            </div>
+          ))}
+        </div>
+
+        {/* Right Arrow */}
+        <button className="w-16 h-16 rounded-full bg-yellow-400 border-4 border-orange-600 shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
+          <span className="text-4xl text-orange-700">→</span>
+        </button>
+      </div>
+
+      {/* Pagination */}
+      <div className="flex items-center gap-3 mt-8 flex-wrap justify-center">
+        {[1,2,3,4,5,6,7,8,9,10].map((page) => (
+          <button
+            key={page}
+            className={`w-12 h-12 rounded-lg text-2xl font-black transition-all ${
+              page === 1
+                ? 'bg-red-700 text-white'
+                : 'bg-orange-500 text-yellow-100 hover:bg-orange-600'
+            }`}
+          >
+            {page}
+          </button>
+        ))}
+
+        <span className="text-4xl font-black text-orange-700">...</span>
+      </div>
+
+      {/* Download Button */}
+      <button className="mt-8 px-10 py-4 rounded-2xl bg-gradient-to-b from-cyan-400 to-blue-500 border-[5px] border-blue-700 shadow-[0_6px_0_#1d4ed8] hover:translate-y-1 hover:shadow-[0_3px_0_#1d4ed8] transition-all duration-150 z-10">
+        <span className="text-3xl font-black text-blue-900 tracking-wide">
+          DOWNLOAD ALL
+        </span>
+      </button>
+
+      {/* Bottom Decorative Stage */}
+      <div className="absolute bottom-0 left-0 right-0 h-44 bg-orange-400 border-t-[8px] border-orange-600 overflow-hidden">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,transparent_0%,transparent_95%,rgba(0,0,0,0.08)_95%,rgba(0,0,0,0.08)_100%)] bg-[length:48px_100%]"></div>
+
+        {/* Ropes */}
+        <div className="absolute top-8 left-0 right-0 flex justify-around">
+          {Array.from({ length: 5 }).map((_, i) => (
+            <div key={i} className="relative w-52 h-20">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-8 h-20 bg-yellow-300 border-4 border-yellow-600 rounded-full"></div>
+              <div className="absolute bottom-0 left-0 right-0 h-10 border-b-[12px] border-red-700 rounded-b-full"></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export function MiniGameDrawingPage() {
+  return (
+    <div className="min-h-screen w-full overflow-hidden relative bg-gradient-to-br from-orange-500 to-orange-700 font-sans flex items-center justify-center p-6">
+      {/* Wooden Background Texture */}
+      <div className="absolute inset-0 opacity-20 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[length:100%_80px]"></div>
+
+      {/* Left Sidebar Controls */}
+      <div className="absolute left-6 top-6 z-30 flex flex-col gap-5">
+        <button className="w-16 h-16 rounded-full bg-yellow-400 border-4 border-orange-700 shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
+          <span className="text-3xl">🏠</span>
+        </button>
+
+        <button className="w-16 h-16 rounded-full bg-yellow-400 border-4 border-orange-700 shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
+          <span className="text-3xl">⚙️</span>
+        </button>
+
+        <button className="w-16 h-16 rounded-full bg-yellow-400 border-4 border-orange-700 shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
+          <span className="text-3xl">💾</span>
+        </button>
+
+        <button className="w-16 h-16 rounded-full bg-yellow-400 border-4 border-orange-700 shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
+          <span className="text-3xl">📂</span>
+        </button>
+
+        {/* Reference Toggle */}
+        <button className="px-4 py-3 rounded-2xl bg-lime-400 border-4 border-lime-700 shadow-lg text-white font-black text-lg hover:scale-105 transition-transform">
+          REF ON
+        </button>
+      </div>
+
+      {/* Navigation Arrows */}
+      <button className="absolute left-6 top-1/2 -translate-y-1/2 z-20 w-16 h-16 rounded-full bg-yellow-400 border-4 border-orange-700 shadow-lg flex items-center justify-center hover:scale-105 transition-transform ml-24">
+        <span className="text-4xl text-orange-700">←</span>
+      </button>
+
+      <button className="absolute right-6 top-1/2 -translate-y-1/2 z-20 w-16 h-16 rounded-full bg-yellow-400 border-4 border-orange-700 shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
+        <span className="text-4xl text-orange-700">→</span>
+      </button>
+
+      {/* Main Drawing Board */}
+      <div className="relative w-full max-w-6xl h-[720px] bg-[#fdf8e8] rounded-[30px] border-[10px] border-[#7c2d12] shadow-2xl overflow-hidden">
+        {/* Paper Area */}
+        <div className="absolute inset-6 bg-[#fffdf4] rounded-[18px] border-2 border-orange-200"></div>
+
+        {/* Reference Image Card */}
+        <div className="absolute top-4 right-4 z-20 w-40 bg-[#fffdf4] border-[5px] border-red-800 rounded-[24px] p-3 shadow-xl">
+          <div className="h-28 flex items-center justify-center border border-gray-300 rounded-xl bg-white text-6xl">
+            🦋
+          </div>
+
+          <p className="text-center text-orange-700 font-bold mt-3 text-lg">
+            Draw this picture
+          </p>
+        </div>
+
+        {/* Bottom Toolbar */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-[#f7e7be] border-t-[6px] border-orange-300 flex items-center justify-between px-8">
+          {/* Mascot Tools */}
+          <div className="flex items-end gap-4">
+            <div className="text-8xl">✏️</div>
+            <div className="text-8xl">🧽</div>
+          </div>
+
+          {/* Brush Controls */}
+          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-2">
+              <div className="w-32 h-4 bg-gradient-to-r from-yellow-400 to-orange-200 rounded-full"></div>
+              <div className="w-5 h-16 bg-orange-500 rounded-md"></div>
+            </div>
+
+            <div className="w-14 h-14 rounded-full bg-orange-500"></div>
+
+            <button className="w-16 h-16 rounded-full bg-yellow-400 border-4 border-orange-600 shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
+              <span className="text-3xl">↩️</span>
+            </button>
+
+            <button className="w-16 h-16 rounded-full bg-yellow-400 border-4 border-orange-600 shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
+              <span className="text-3xl">↪️</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export function LessonsPage() {
+  const lessonCards = [
+    {
+      title: 'Line\ntracing',
+      icon: '🍀',
+      style: 'border-dashed border-lime-400 opacity-60',
+    },
+    {
+      title: 'Stroke\ncontrol',
+      icon: '☘️',
+      style: 'border-solid border-lime-600',
+    },
+    {
+      title: 'Drawing',
+      icon: '🍀',
+      style: 'bg-gradient-to-b from-lime-300 to-lime-500',
+    },
+    {
+      title: 'Shapes',
+      icon: '☘️',
+      style: 'border-solid border-lime-500',
+    },
+    {
+      title: 'Shading',
+      icon: '🍀',
+      style: 'bg-lime-500',
+    },
+  ]
+
+  return (
+    <div className="min-h-screen w-full overflow-hidden relative bg-gradient-to-b from-sky-300 to-sky-100 flex items-center justify-center font-sans p-6">
+      {/* Clouds */}
+      <div className="absolute top-8 left-20 w-52 h-24 bg-white rounded-full opacity-90 blur-sm"></div>
+      <div className="absolute top-16 right-24 w-60 h-28 bg-white rounded-full opacity-90 blur-sm"></div>
+
+      {/* Hills */}
+      <div className="absolute bottom-0 left-0 right-0 h-72 bg-gradient-to-t from-lime-700 to-lime-400 rounded-t-[120px]"></div>
+
+      {/* Main Folder Card */}
+      <div className="relative z-10 w-full max-w-7xl bg-[#f7eed8] border-[8px] border-orange-700 rounded-[48px] shadow-2xl p-10 pt-24">
+        {/* Folder Top */}
+        <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-96 h-24 bg-orange-400 border-[8px] border-orange-700 border-b-0 rounded-t-[40px] flex items-center justify-center shadow-lg">
+          <span className="text-7xl">✏️</span>
+        </div>
+
+        {/* Logo */}
+        <div className="absolute top-6 right-6 scale-75 origin-top-right">
+          <div className="text-5xl font-black flex drop-shadow-lg">
+            <span className="text-lime-500">a</span>
+            <span className="text-green-400">r</span>
+            <span className="text-cyan-400">t</span>
+            <span className="text-teal-500">o</span>
+            <span className="text-sky-700">p</span>
+            <span className="text-violet-500">i</span>
+            <span className="text-amber-400">a</span>
+          </div>
+        </div>
+
+        {/* Title */}
+        <h1 className="text-5xl md:text-6xl font-black text-orange-700 text-center mb-12 tracking-wide drop-shadow-[0_3px_0_rgba(255,255,255,0.8)]">
+          WHAT DO YOU WANT TO LEARN?
+        </h1>
+
+        {/* Lesson Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          {lessonCards.map((lesson) => (
+            <button
+              key={lesson.title}
+              className="bg-white rounded-[28px] border-[5px] border-lime-700 shadow-[0_8px_0_#4d7c0f] hover:translate-y-1 hover:shadow-[0_4px_0_#4d7c0f] transition-all duration-150 overflow-hidden flex flex-col"
+            >
+              {/* Icon Area */}
+              <div className="flex-1 min-h-[220px] flex items-center justify-center p-6">
+                <div className={`w-28 h-28 rounded-full border-[6px] text-7xl flex items-center justify-center text-lime-500 ${lesson.style}`}>
+                  {lesson.icon}
+                </div>
+              </div>
+
+              {/* Bottom Label */}
+              <div className="bg-gradient-to-b from-lime-300 to-lime-500 border-t-[5px] border-lime-700 py-5 px-4 rounded-t-[24px]">
+                <p className="text-white text-3xl font-black text-center leading-tight whitespace-pre-line drop-shadow-md">
+                  {lesson.title}
+                </p>
+              </div>
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export function AgeSelectionPage() {
+  const ages = [6, 7, 8, 9]
+
+  return (
+    <div className="min-h-screen w-full overflow-hidden relative bg-gradient-to-b from-sky-300 to-sky-100 flex items-center justify-center font-sans">
+      {/* Background Clouds */}
+      <div className="absolute top-6 left-12 w-40 h-20 bg-white rounded-full opacity-80 blur-sm"></div>
+      <div className="absolute top-10 right-24 w-52 h-24 bg-white rounded-full opacity-80 blur-sm"></div>
+
+      {/* Hills */}
+      <div className="absolute bottom-0 left-0 right-0 h-72 bg-gradient-to-t from-lime-700 to-lime-400 rounded-t-[120px]"></div>
+      <div className="absolute bottom-10 left-[-5%] w-[60%] h-48 bg-lime-500 rounded-full opacity-90"></div>
+      <div className="absolute bottom-8 right-[-5%] w-[55%] h-44 bg-lime-400 rounded-full opacity-90"></div>
+
+      {/* Blurred Overlay */}
+      <div className="absolute inset-0 backdrop-blur-[2px] bg-black/10"></div>
+
+      {/* Back Button */}
+      <button className="absolute top-6 left-6 z-20 w-16 h-16 rounded-full bg-yellow-400 border-4 border-orange-500 shadow-xl flex items-center justify-center hover:scale-105 transition-transform">
+        <span className="text-4xl text-orange-700">←</span>
+      </button>
+
+      {/* Small Logo */}
+      <div className="absolute top-6 right-6 z-20">
+        <div className="text-5xl font-black flex drop-shadow-lg scale-75 origin-top-right">
+          <span className="text-lime-500">a</span>
+          <span className="text-green-400">r</span>
+          <span className="text-cyan-400">t</span>
+          <span className="text-teal-500">o</span>
+          <span className="text-sky-700">p</span>
+          <span className="text-violet-500">i</span>
+          <span className="text-amber-400">a</span>
+        </div>
+      </div>
+
+      {/* Center Content */}
+      <div className="relative z-10 flex flex-col items-center">
+        <h1 className="text-5xl md:text-7xl font-black text-orange-700 mb-16 tracking-wide drop-shadow-[0_4px_0_rgba(255,255,255,0.9)] text-center">
+          HOW OLD ARE YOU?
+        </h1>
+
+        {/* Age Buttons */}
+        <div className="flex gap-6 md:gap-10 flex-wrap justify-center">
+          {ages.map((age) => (
+            <button
+              key={age}
+              className="w-28 h-28 rounded-full bg-gradient-to-b from-yellow-300 to-yellow-500 border-[5px] border-orange-500 shadow-[0_6px_0_#c2410c] hover:translate-y-1 hover:shadow-[0_3px_0_#c2410c] transition-all duration-150 flex items-center justify-center"
+            >
+              <span className="text-5xl font-black text-white drop-shadow-md">
+                {age}
+              </span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Decorative Flowers */}
+      <div className="absolute bottom-24 left-20 text-2xl">🌼</div>
+      <div className="absolute bottom-32 left-40 text-xl">🌸</div>
+      <div className="absolute bottom-20 right-24 text-2xl">🌼</div>
+      <div className="absolute bottom-36 right-40 text-xl">🌸</div>
+
+      {/* Path */}
+      <div className="absolute bottom-0 w-[420px] h-[220px] bg-yellow-100 opacity-50 rounded-t-full rotate-6"></div>
+    </div>
+  )
+}
